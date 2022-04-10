@@ -2,12 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="gridbox.js"></script>
+
+    <style>
+
+        body {background: black; color: lightgreen;height: 100%; width: 100%; margin: 0; }
+        /* div { height: 30vh; width: 30vw; } */
+        .panel { width: 600px; height: 400px; padding:15px; border: solid lightgreen 1px;}
+        #left { width: 700px; margin-left: 20px;}
+        #right {float: right;}
+        #container { width:2000px}
+    </style>
     <title>Demo</title>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 </head>
 <body>
-    Hello
+    <div class="container">
+        <div id="right">
+            <h1>Quotes</h1>
+            <div id="quotes" class="panel"></div>
+            <h1>Trades</h1>
+            <div id="trades" class="panel"></div>
+        </div>
+    
+        <div id="left">
+            <h1>Chart</h1>
+            <div id="chart" ></div>
+        </div>
+    </div>
+
+    <script src="gridbox.js"></script>
 </body>
 </html>
